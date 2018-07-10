@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // Get userName and ask if they want to play a game
 var userName = prompt('Hi, what\'s your name?');
@@ -74,4 +74,4 @@ if (gameAnswerFive.toUpperCase() === 'N') {
   alert('Welp, at least this is the last invalid answer you can give lol');
 }
 
-alert('Thanks for playing, ' + userName + '!\nI hope you enjoyed the new facts you know about me!');
+alert('Thanks for playing, ' + userName + '!\nI hope you enjoyed the facts you now know about me!');
