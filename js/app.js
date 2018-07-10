@@ -25,7 +25,38 @@ if (gameAnswerOne.toUpperCase() === 'N') {
 }
 
 var gameAnswerTwo = prompt('Next question, ' + userName + '!\nDo I share the same favorite color with Prince? (purple)');
+console.log('gameAnswerTwo', gameAnswerTwo);
 
 if (gameAnswerTwo.toUpperCase() === 'N') {
-    alert('Oh no! I DO love purple!');
-} else 
+  alert('Oh no! I DO love purple!');
+} else if (gameAnswerTwo.toUpperCase() === 'Y') {
+  alert('You\'re right, ' + userName + '!\n(as if my hair wasn\'t a big enough flag!)');
+} else {
+  alert('You need to try Y/N next time!');
+}
+
+var gameAnswerThree = prompt('This one is tough: Am I an Android phone user?');
+console.log('gameAnswerThree', gameAnswerThree);
+
+if (gameAnswerThree.toUpperCase() === 'N') {
+  alert('RIP Siri, I\'m all about that Android!');
+} else if (gameAnswerThree.toUpperCase() === 'Y') {
+  alert('Are we best friends yet?\nBecause you\'re totally right, ' + userName + '!');
+} else {
+  alert('C\'mon, just try a Y/N next time, k??');
+}
+
+var gameAnswerFour = prompt('Are Battle Royale games my favorite type to play?');
+console.log('gameAnswerFour', gameAnswerFour);
+
+if (gameAnswerFour.toUpperCase() === 'N') {
+  alert('You got it, ' + userName +'!\nI\'m actually the biggest fan of RPGs (role-playing games)');
+} else if (gameAnswerFour.toUpperCase() === 'Y') {
+  alert('Sorry, but nope! I like to play them, but they\'re not my fave');
+} else {
+  alert('Letters only!!!! One! Letter!');
+}
+
+var gameAnswerFive = prompt('F I N A L  Q U E S T I O N\nDo I buy all my computers from Apple?');
+console.log('gameAnswerFive', gameAnswerFive);
+
