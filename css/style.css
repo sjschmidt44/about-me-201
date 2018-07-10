@@ -2,6 +2,14 @@
     background: plum;
 }
 
-p {
-    background: turquoise;
+h1, h2 {
+    text-align: center;
+}
+
+nav > ul > li {
+    color: whitesmoke;
+}
+
+section.questions > p {
+    font-style: italic;
 }

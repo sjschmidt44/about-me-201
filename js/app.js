@@ -4,7 +4,7 @@
 var userName = prompt('Hi, what\'s your name?');
 console.log('userName', userName);
 var gameInit = prompt('Greetings, ' + userName + '! Would you like to play a game?\nType Y or N for your selection');
-console.log('gameInit', gameInit);
+console.log('gameInit value entered:', gameInit);
 
 if (gameInit.toUpperCase() === 'N') {
   alert('Thank you for visiting,\nSee you next time!');
@@ -16,7 +16,7 @@ if (gameInit.toUpperCase() === 'N') {
 
 // QUESTION ONE
 var gameAnswerOne = prompt('Ok, ' + userName + ', first question:\nDo I have any pets?\nType Y or N');
-console.log('gameAnswerOne', gameAnswerOne);
+console.log('gameAnswerOne value entered:', gameAnswerOne);
 
 if (gameAnswerOne.toUpperCase() === 'N') {
   alert('Oops! I actually have two cats!\nI also hope to adopt a dog by the end of 2018, but we\'ll have to wait and see!');
@@ -28,7 +28,7 @@ if (gameAnswerOne.toUpperCase() === 'N') {
 
 //QUESTION TWO
 var gameAnswerTwo = prompt('Next question, ' + userName + '!\nDo I share the same favorite color with Prince? (purple)');
-console.log('gameAnswerTwo', gameAnswerTwo);
+console.log('gameAnswerTwo value entered:', gameAnswerTwo);
 
 if (gameAnswerTwo.toUpperCase() === 'N') {
   alert('Oh no! I DO love purple!');
@@ -40,7 +40,7 @@ if (gameAnswerTwo.toUpperCase() === 'N') {
 
 //QUESTION THREE
 var gameAnswerThree = prompt('This one is tough: Am I an Android phone user?');
-console.log('gameAnswerThree', gameAnswerThree);
+console.log('gameAnswerThree value entered:', gameAnswerThree);
 
 if (gameAnswerThree.toUpperCase() === 'N') {
   alert('RIP Siri, I\'m all about that Android!');
@@ -52,7 +52,7 @@ if (gameAnswerThree.toUpperCase() === 'N') {
 
 //QUESTION FOUR
 var gameAnswerFour = prompt('Are Battle Royale games my favorite type to play?');
-console.log('gameAnswerFour', gameAnswerFour);
+console.log('gameAnswerFour value entered:', gameAnswerFour);
 
 if (gameAnswerFour.toUpperCase() === 'N') {
   alert('You got it, ' + userName +'!\nI\'m actually the biggest fan of RPGs (role-playing games)');
@@ -64,7 +64,7 @@ if (gameAnswerFour.toUpperCase() === 'N') {
 
 //QUESTION FIVE
 var gameAnswerFive = prompt('F I N A L  Q U E S T I O N\nDo I buy my computers from Apple?');
-console.log('gameAnswerFive', gameAnswerFive);
+console.log('gameAnswerFive value entered:', gameAnswerFive);
 
 if (gameAnswerFive.toUpperCase() === 'N') {
   alert('You are right, ' + userName + '.\nI actually build my own personal computers!');
