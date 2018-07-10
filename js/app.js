@@ -60,3 +60,10 @@ if (gameAnswerFour.toUpperCase() === 'N') {
 var gameAnswerFive = prompt('F I N A L  Q U E S T I O N\nDo I buy all my computers from Apple?');
 console.log('gameAnswerFive', gameAnswerFive);
 
+if (gameAnswerFive.toUpperCase() === 'N') {
+  alert('You are right, ' + userName + '.\nI actually build my own personal computers!');
+} else if (gameAnswerFive.toUpperCase() === 'Y') {
+  alert('Oh noes, def not! I use Macs for work only - playtime is on my custom-built PC!');
+} else {
+  alert('Welp, at least this is the last invalid answer you can give lol');
+}
