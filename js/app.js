@@ -2,7 +2,7 @@
 
 // Get userName and ask if they want to play a game
 var userName = prompt('Hi, what\'s your name?');
-console.log('userName', userName);
+console.log('userName entered:', userName);
 var gameInit = prompt('Greetings, ' + userName + '! Would you like to play a game?\nType Y or N for your selection');
 console.log('gameInit value entered:', gameInit);
 
@@ -11,7 +11,7 @@ if (gameInit.toUpperCase() === 'N') {
 } else if (gameInit.toUpperCase() === 'Y'){
   alert('Excellent!\nClick through to see the first question!');
 } else {
-  alert('Sorry, but please try again using Y/N for your answer.');
+  alert('Sorry, but you\'re stuck here!');
 }
 
 // QUESTION ONE
@@ -23,11 +23,11 @@ if (gameAnswerOne.toUpperCase() === 'N') {
 } else if (gameAnswerOne.toUpperCase() === 'Y') {
   alert('Correct! I have 2 cats named Taz and Gaz!');
 } else {
-  alert('Please refresh and try again.');
+  alert('Please try again.');
 }
 
 //QUESTION TWO
-var gameAnswerTwo = prompt('Next question, ' + userName + '!\nDo I share the same favorite color with Prince? (purple)');
+var gameAnswerTwo = prompt('Next question, ' + userName + '!\nDo I share the same favorite color with Prince? (purple)\nType Y or N');
 console.log('gameAnswerTwo value entered:', gameAnswerTwo);
 
 if (gameAnswerTwo.toUpperCase() === 'N') {
@@ -39,7 +39,7 @@ if (gameAnswerTwo.toUpperCase() === 'N') {
 }
 
 //QUESTION THREE
-var gameAnswerThree = prompt('This one is tough: Am I an Android phone user?');
+var gameAnswerThree = prompt('This one is tough: Am I an Android phone user?\nType Y or N');
 console.log('gameAnswerThree value entered:', gameAnswerThree);
 
 if (gameAnswerThree.toUpperCase() === 'N') {
@@ -51,7 +51,7 @@ if (gameAnswerThree.toUpperCase() === 'N') {
 }
 
 //QUESTION FOUR
-var gameAnswerFour = prompt('Are Battle Royale games my favorite type to play?');
+var gameAnswerFour = prompt('Are Battle Royale games my favorite type to play?\nType Y or N');
 console.log('gameAnswerFour value entered:', gameAnswerFour);
 
 if (gameAnswerFour.toUpperCase() === 'N') {
@@ -63,7 +63,7 @@ if (gameAnswerFour.toUpperCase() === 'N') {
 }
 
 //QUESTION FIVE
-var gameAnswerFive = prompt('F I N A L  Q U E S T I O N\nDo I buy my computers from Apple?');
+var gameAnswerFive = prompt('F I N A L  Q U E S T I O N\nDo I buy my computers from Apple?\nType Y or N');
 console.log('gameAnswerFive value entered:', gameAnswerFive);
 
 if (gameAnswerFive.toUpperCase() === 'N') {
