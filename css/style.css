@@ -19,13 +19,15 @@ nav > ul > li {
     box-sizing: border-box;
     color: whitesmoke;
     display: inline-block;
-    width: 10%;
+    width: 90px;
+    height: 60px;
     border: 2px solid lightgray;
     margin: 2em;
-    padding: 5px;
+    padding: 1.1em 0.1em 1em 0;
     text-align: center;
+    box-shadow: 5px 5px 5px rgba(22, 22, 22, 0.3);
 }
 
-#aboutMe > p {
+#aboutMe > div > p {
     font-style: italic;
 }
