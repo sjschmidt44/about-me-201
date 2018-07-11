@@ -29,8 +29,20 @@ nav > ul > li {
     box-shadow: 5px 5px 5px rgba(22, 22, 22, 0.3);
 }
 
-#aboutMe > div > p {
+#aboutMe * {
     font-style: italic;
+}
+
+#aboutMe > div > h3 {
+    font-style: normal !important;
+}
+
+#quiz {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid lightgray;
+    padding: 1em;
+    width: 40%;
 }
 
 #videoGameList {
@@ -38,6 +50,5 @@ nav > ul > li {
     box-sizing: border-box;
     border: 2px solid lightgray;
     padding: 1em;
-    width: 250px;
-    margin: 10px auto 10px auto;
+    width: 40%;
 }
