@@ -14,8 +14,16 @@ h1, h2 {
     text-align: center;
 }
 
+
 nav > ul > li {
+    box-sizing: border-box;
     color: whitesmoke;
+    display: inline-block;
+    width: 10%;
+    border: 2px solid lightgray;
+    margin: 2em;
+    padding: 5px;
+    text-align: center;
 }
 
 #aboutMe > p {
