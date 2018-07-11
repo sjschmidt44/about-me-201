@@ -7,7 +7,7 @@ var gameInit = prompt('Greetings, ' + userName + '! Would you like to play a gam
 console.log('gameInit value entered:', gameInit);
 
 if (gameInit === 'N') {
-  alert('Thank you for visiting,\nSee you next time!');
+  alert('Thank you for visiting,\nbut you\'re stuck here!');
 } else if (gameInit === 'Y'){
   alert('Excellent!\nClick through to see the first question!');
 } else {
@@ -15,6 +15,8 @@ if (gameInit === 'N') {
 }
 
 // QUESTION ONE
+var gameScore = 0;
+console.log('gameScore initiliazed, should equal 0:', gameScore);
 var gameAnswerOne = prompt('Ok, ' + userName + ', first question:\nDo I have any pets?\nType Y or N').toUpperCase();
 console.log('gameAnswerOne value entered:', gameAnswerOne);
 
@@ -22,6 +24,8 @@ if (gameAnswerOne === 'N') {
   alert('Oops! I actually have two cats!\nI also hope to adopt a dog by the end of 2018, but we\'ll have to wait and see!');
 } else if (gameAnswerOne === 'Y') {
   alert('Correct! I have 2 cats named Taz and Gaz!');
+  gameScore++;
+  console.log('gameScore should equal 1', gameScore);
 } else {
   alert('Please try again.');
 }
@@ -34,6 +38,8 @@ if (gameAnswerTwo === 'N') {
   alert('Oh no! I DO love purple!');
 } else if (gameAnswerTwo === 'Y') {
   alert('You\'re right, ' + userName + '!\n(as if my hair wasn\'t a big enough flag!)');
+  gameScore++;
+  console.log('gameScore should be +1', gameScore);
 } else {
   alert('You need to try Y/N next time!');
 }
@@ -46,6 +52,8 @@ if (gameAnswerThree === 'N') {
   alert('RIP Siri, I\'m all about that Android!');
 } else if (gameAnswerThree === 'Y') {
   alert('Are we best friends yet?\nBecause you\'re totally right, ' + userName + '!\nI love an open app ecosystem!');
+  gameScore++;
+  console.log('gameScore should be +1', gameScore);
 } else {
   alert('C\'mon, just try a Y/N next time, k??');
 }
@@ -56,6 +64,8 @@ console.log('gameAnswerFour value entered:', gameAnswerFour);
 
 if (gameAnswerFour === 'N') {
   alert('You got it, ' + userName +'!\nI\'m actually the biggest fan of RPGs (role-playing games)');
+  gameScore++;
+  console.log('gameScore should be +1', gameScore);
 } else if (gameAnswerFour === 'Y') {
   alert('Sorry, but nope! I like to play them, but they\'re not my fave.\nRPGs hold that spot!');
 } else {
@@ -68,6 +78,8 @@ console.log('gameAnswerFive value entered:', gameAnswerFive);
 
 if (gameAnswerFive === 'N') {
   alert('You are right, ' + userName + '.\nI actually build my own personal computers!');
+  gameScore++;
+  console.log('gameScore should be +1', gameScore);
 } else if (gameAnswerFive === 'Y') {
   alert('Oh noes, def not! I use Macs for work only - playtime is on my custom-built PC!');
 } else {
