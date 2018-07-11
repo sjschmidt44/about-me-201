@@ -33,16 +33,18 @@ nav > ul > li {
     font-style: italic;
 }
 
-#aboutMe > div > h3 {
+#aboutMe > h3 {
     font-style: normal !important;
 }
 
 #quiz {
     display: inline-block;
-    box-sizing: border-box;
+    box-sizing: content-box;
     border: 2px solid lightgray;
-    padding: 1em;
+    padding: 1.2em;
     width: 40%;
+    text-align: right;
+    margin: 3em;
 }
 
 #videoGameList {
