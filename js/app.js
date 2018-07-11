@@ -3,19 +3,19 @@
 // Get userName and ask if they want to play a game
 var userName = prompt('Hi, what\'s your name?');
 console.log('userName entered:', userName);
-var gameInit = prompt('Greetings, ' + userName + '! Would you like to play a game?\nType Y or N for your selection').toUpperCase;
+var gameInit = prompt('Greetings, ' + userName + '! Would you like to play a game?\nType Y or N for your selection').toUpperCase();
 console.log('gameInit value entered:', gameInit);
 
-if (gameInit() === 'N') {
+if (gameInit === 'N') {
   alert('Thank you for visiting,\nSee you next time!');
-} else if (gameInit() === 'Y'){
+} else if (gameInit === 'Y'){
   alert('Excellent!\nClick through to see the first question!');
 } else {
   alert('Sorry, but you\'re stuck here!');
 }
 
 // QUESTION ONE
-var gameAnswerOne = prompt('Ok, ' + userName + ', first question:\nDo I have any pets?\nType Y or N').toUpperCase;
+var gameAnswerOne = prompt('Ok, ' + userName + ', first question:\nDo I have any pets?\nType Y or N').toUpperCase();
 console.log('gameAnswerOne value entered:', gameAnswerOne);
 
 if (gameAnswerOne === 'N') {
@@ -27,7 +27,7 @@ if (gameAnswerOne === 'N') {
 }
 
 //QUESTION TWO
-var gameAnswerTwo = prompt('Next question, ' + userName + '!\nDo I share the same favorite color with Prince? (purple)\nType Y or N').toUpperCase;
+var gameAnswerTwo = prompt('Next question, ' + userName + '!\nDo I share the same favorite color with Prince? (purple)\nType Y or N').toUpperCase();
 console.log('gameAnswerTwo value entered:', gameAnswerTwo);
 
 if (gameAnswerTwo === 'N') {
@@ -39,7 +39,7 @@ if (gameAnswerTwo === 'N') {
 }
 
 //QUESTION THREE
-var gameAnswerThree = prompt('This one is tough: Am I an Android phone user?\nType Y or N').toUpperCase;
+var gameAnswerThree = prompt('This one is tough: Am I an Android phone user?\nType Y or N').toUpperCase();
 console.log('gameAnswerThree value entered:', gameAnswerThree);
 
 if (gameAnswerThree === 'N') {
@@ -51,7 +51,7 @@ if (gameAnswerThree === 'N') {
 }
 
 //QUESTION FOUR
-var gameAnswerFour = prompt('Are Battle Royale games my favorite type to play?\nType Y or N').toUpperCase;
+var gameAnswerFour = prompt('Are Battle Royale games my favorite type to play?\nType Y or N').toUpperCase();
 console.log('gameAnswerFour value entered:', gameAnswerFour);
 
 if (gameAnswerFour === 'N') {
@@ -63,7 +63,7 @@ if (gameAnswerFour === 'N') {
 }
 
 //QUESTION FIVE
-var gameAnswerFive = prompt('F I N A L  Q U E S T I O N\nDo I buy my computers from Apple?\nType Y or N').toUpperCase;
+var gameAnswerFive = prompt('F I N A L  Q U E S T I O N\nDo I buy my computers from Apple?\nType Y or N').toUpperCase();
 console.log('gameAnswerFive value entered:', gameAnswerFive);
 
 if (gameAnswerFive === 'N') {
