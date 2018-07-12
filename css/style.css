@@ -4,6 +4,7 @@
     color: lightgray;
 }
 
+/* TO DO: Find a better heading font */
 h1 {
     font-size: 2em;
     box-sizing: content-box;
@@ -24,6 +25,8 @@ nav {
     text-align: center;
 }
 
+/* Nav Menu Buttons */
+/* TO DO: Add links to sections of doc, make a full interactable button */
 nav > ul > li {
     box-sizing: border-box;
     color: rgb(142, 245, 245);
@@ -38,28 +41,31 @@ nav > ul > li {
     box-shadow: 10px 10px 10px rgba(109, 250, 255, 0.753);
 }
 
+/* TO DO: Fix the weirdness so both boxes are centered on page, no matter width */
 #aboutMe * {
     font-style: italic;
 }
 
 #aboutMe > h3 {
     font-style: normal !important;
+    margin-top: 5em;
 }
 
 #quiz {
     display: inline-block;
     box-sizing: content-box;
-    border: 2px solid lightgray;
+    border: 2px solid rgb(0, 255, 255);
     padding: 1.2em;
     width: 40%;
     text-align: right;
     margin: 3em;
+    /* background-color: rgba(0, 255, 255, 0.096); can't get this to work!*/
 }
 
 #videoGameList {
     display: inline-block;
     box-sizing: border-box;
-    border: 2px solid lightgray;
+    border: 2px solid rgb(0, 255, 255);
     padding: 1em;
     width: 40%;
 }

@@ -3,15 +3,15 @@
 // Get userName and ask if they want to play a game
 var userName = prompt('Hi, what\'s your name?');
 console.log('userName entered:', userName);
-var gameInit = prompt('Greetings, ' + userName + '! Would you like to play a game?\nType Y or N for your selection').toUpperCase();
+var gameInit = prompt('Greetings, ' + userName + '! Would you like to play a game?\nType Y or Esc to reach main site').toUpperCase();
 console.log('gameInit value entered:', gameInit);
 
 if (gameInit === 'N') {
-  alert('Thank you for visiting,\nbut you\'re stuck here!');
+  alert('Thank you for visiting, press Esc key twice to reach main site');
 } else if (gameInit === 'Y'){
   alert('Excellent!\nClick through to see the first question!');
 } else {
-  alert('Sorry, but you\'re stuck here!');
+  alert('Sorry, press Esc key twice to reach main site');
 }
 
 // QUESTION ONE
@@ -73,7 +73,7 @@ if (gameAnswerFour === 'N') {
 }
 
 //QUESTION FIVE
-var gameAnswerFive = prompt('F I N A L  Q U E S T I O N\nDo I buy my computers from Apple?\nType Y or N').toUpperCase();
+var gameAnswerFive = prompt('Do I buy my computers from Apple?\nType Y or N').toUpperCase();
 console.log('gameAnswerFive value entered:', gameAnswerFive);
 
 if (gameAnswerFive === 'N') {
@@ -85,5 +85,22 @@ if (gameAnswerFive === 'N') {
 } else {
   alert('Welp, at least this is the last invalid answer you can give lol');
 }
+
+//QUESTION FIVE
+var gameAnswerSix = prompt('Ok, this one is tough: What\'s the answer to life, the universe, and everything?\nYou\'ve got 4 guesses!').toUpperCase();
+console.log('gameAnswerSix value entered: ', gameAnswerSix);
+
+switch (gameAnswerSix) {
+case '42':
+  alert('You\'re right!');
+  gameScore++;
+  console.log('gameScore should be +1', gameScore);
+  break;
+
+default:
+  alert('That\'s not it :(');
+  break;
+}
+
 
 alert('Thanks for playing, ' + userName + '!\nI hope you enjoyed the facts you now know about me!');
