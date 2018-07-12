@@ -87,7 +87,8 @@ if (gameAnswerFive === 'N') {
 }
 
 //QUESTION FIVE
-var gameAnswerSix = prompt('Ok, this one is tough: What\'s the answer to life, the universe, and everything?\nYou\'ve got 4 guesses!').toUpperCase();
+var gameAnswerSix = prompt('Ok, this one is tough: What\'s the answer to life, the universe, and everything?\nYou\'ve got 4 guesses!');
+gameAnswerSix = parseInt(gameAnswerSix, 10);
 var guesses = 0;
 console.log('gameAnswerSix value entered: ', gameAnswerSix);
 console.log('Guesses counter should be 0: ', guesses);
@@ -105,19 +106,23 @@ console.log('Guesses counter should be 0: ', guesses);
 // }
 
 if (gameAnswerSix !== 42) { //If the answer is wrong
-  while (guesses < 4) { //while less than 4 guesses
-    prompt('That\'s not it, try again!\nYou have ' + guesses + ' remaining!'); //alert that's not right
+  while (guesses < 3) { //while less than 4 guesses
     guesses++; //+1 to guesses counter
+    console.log('gameAnswerSix value entered: ', gameAnswerSix);
     console.log('Guesses counter is +1: ', guesses);
+    prompt('That\'s not it, try again!\nYou have ' + guesses + ' remaining!'); //alert that's not right
   }
 } else if (gameAnswerSix !== 42) {
-  while (guesses === 4) {
+  while (guesses === 4) { //too many guesses, sorry
+    console.log('gameAnswerSix value entered: ', gameAnswerSix);
     prompt('I\'m sorry, but the answer is 42');
     console.log('Guesses counter is +1: ', guesses);
   }
 } else {
+  console.log('gameAnswerSix value entered: ', gameAnswerSix);
   alert('You got it right!');
 }
+
 
 
 alert('Thanks for playing, ' + userName + '!\nI hope you enjoyed the facts you now know about me!');
