@@ -86,43 +86,51 @@ if (gameAnswerFive === 'N') {
   alert('Welp, at least this is the last invalid answer you can give lol');
 }
 
-//QUESTION FIVE
+//QUESTION SIX
 var gameAnswerSix = prompt('Ok, this one is tough: What\'s the answer to life, the universe, and everything?\nYou\'ve got 4 guesses!');
 gameAnswerSix = parseInt(gameAnswerSix, 10);
-var guesses = 0;
+var guessAnswerSix = 0;
 console.log('gameAnswerSix value entered: ', gameAnswerSix);
-console.log('Guesses counter should be 0: ', guesses);
-
-// switch (gameAnswerSix) {
-// case '42':
-//   alert('You\'re right!');
-//   gameScore++;
-//   console.log('gameScore should be +1', gameScore);
-//   break;
-
-// default:
-//   alert('That\'s not it :(');
-//   break;
-// }
+console.log('guessAnswerSix counter should be 0: ', guessAnswerSix);
 
 if (gameAnswerSix !== 42) { //If the answer is wrong
-  while (guesses < 3) { //while less than 4 guesses
-    guesses++; //+1 to guesses counter
+  while (guessAnswerSix < 3) { //while less than 4 guessAnswerSix
+    guessAnswerSix++; //+1 to guessAnswerSix counter
     console.log('gameAnswerSix value entered: ', gameAnswerSix);
-    console.log('Guesses counter is +1: ', guesses);
-    prompt('That\'s not it, try again!\nYou have ' + guesses + ' remaining!'); //alert that's not right
+    console.log('guessAnswerSix counter is +1: ', guessAnswerSix);
+    prompt('That\'s not it, try again!\nYou have ' + guessAnswerSix + ' remaining!'); //alert that's not right
   }
 } else if (gameAnswerSix !== 42) {
-  while (guesses === 4) { //too many guesses, sorry
+  while (guessAnswerSix === 4) { //too many guessAnswerSix, sorry
     console.log('gameAnswerSix value entered: ', gameAnswerSix);
     prompt('I\'m sorry, but the answer is 42');
-    console.log('Guesses counter is +1: ', guesses);
+    console.log('guessAnswerSix counter is +1: ', guessAnswerSix);
   }
 } else {
   console.log('gameAnswerSix value entered: ', gameAnswerSix);
   alert('You got it right!');
 }
 
+//QUESTION SEVEN
+var gameAnswerSeven = prompt('Can you guess which US states I have visited?\nYou have 6 tries!').toUpperCase();
+console.log('gameAnswerSix value entered: ', gameAnswerSeven);
+var answerStates = ['Texas', 'Oregon', 'California', 'New York', 'Florida', 'Colorado'];
+console.log('List of possible answers: ', answerStates);
+var guessAnswerSeven = 0;
+console.log('guessAnswerSeven counter should be 0: ', guessAnswerSeven);
+
+if (answerStates.includes(gameAnswerSeven)) {
+  while (guessAnswerSeven < 6)
+    gameScore++;
+  console.log('gameScore increases by 1: ', gameScore);
+  alert('You got it!');
+} else if (guessAnswerSeven < 6) {
+  prompt('Try again');
+} else {
+  alert('Sorry, you reached the max guesses');
+}
+alert('I\'ve been to the follow states: ' + answerStates[0] + '\n' + answerStates[1] + '\n' + answerStates[2] + '\n' + answerStates[3] + '\n' + answerStates[4] + '\n' + answerStates[5]);
 
 
-alert('Thanks for playing, ' + userName + '!\nI hope you enjoyed the facts you now know about me!');
+
+alert('Thanks for playing, ' + userName + '!\nI hope you enjoyed the facts you now know about me!\nYou got ' + gameScore + ' out of 7 correct!');
