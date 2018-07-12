@@ -88,18 +88,35 @@ if (gameAnswerFive === 'N') {
 
 //QUESTION FIVE
 var gameAnswerSix = prompt('Ok, this one is tough: What\'s the answer to life, the universe, and everything?\nYou\'ve got 4 guesses!').toUpperCase();
+var guesses = 0;
 console.log('gameAnswerSix value entered: ', gameAnswerSix);
+console.log('Guesses counter should be 0: ', guesses);
 
-switch (gameAnswerSix) {
-case '42':
-  alert('You\'re right!');
-  gameScore++;
-  console.log('gameScore should be +1', gameScore);
-  break;
+// switch (gameAnswerSix) {
+// case '42':
+//   alert('You\'re right!');
+//   gameScore++;
+//   console.log('gameScore should be +1', gameScore);
+//   break;
 
-default:
-  alert('That\'s not it :(');
-  break;
+// default:
+//   alert('That\'s not it :(');
+//   break;
+// }
+
+if (gameAnswerSix !== 42) { //If the answer is wrong
+  while (guesses < 4) { //while less than 4 guesses
+    prompt('That\'s not it, try again!\nYou have ' + guesses + ' remaining!'); //alert that's not right
+    guesses++; //+1 to guesses counter
+    console.log('Guesses counter is +1: ', guesses);
+  }
+} else if (gameAnswerSix !== 42) {
+  while (guesses === 4) {
+    prompt('I\'m sorry, but the answer is 42');
+    console.log('Guesses counter is +1: ', guesses);
+  }
+} else {
+  alert('You got it right!');
 }
 
 
