@@ -38,7 +38,6 @@ gameScore = questionOne(gameScore);
 function questionTwo(scoreTwo){
   var gameAnswerTwo = prompt('Next question, ' + userName + '!\nDo I share the same favorite color with Prince? (purple)\nType Y or N').toUpperCase();
   console.log('gameAnswerTwo value entered:', gameAnswerTwo);
-
   if (gameAnswerTwo === 'N') {
     alert('Oh no! I DO love purple!');
   } else if (gameAnswerTwo === 'Y') {
@@ -49,9 +48,9 @@ function questionTwo(scoreTwo){
     alert('You need to try Y/N next time!');
   }
   return scoreTwo;
-
 }
 gameScore = questionTwo(gameScore);
+
 //QUESTION THREE
 function questionThree(scoreThree){
   var gameAnswerThree = prompt('This one is tough: Am I an Android phone user?\nType Y or N').toUpperCase();
@@ -148,6 +147,7 @@ function questionSeven(scoreSeven) {
 
   if (answerStates.includes(gameAnswerSeven)) {
     scoreSeven++;
+
     console.log('gameScore increases by 1: ' + gameScore);
     alert('You got it!');
   } else if (guessAnswerSeven < 6) {
