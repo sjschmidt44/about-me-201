@@ -37,18 +37,18 @@ gameScore = questionOne(gameScore);
 //QUESTION TWO
 function questionTwo(scoreTwo){
   var gameAnswerTwo = prompt('Next question, ' + userName + '!\nDo I share the same favorite color with Prince? (purple)\nType Y or N').toUpperCase();
-console.log('gameAnswerTwo value entered:', gameAnswerTwo);
+  console.log('gameAnswerTwo value entered:', gameAnswerTwo);
 
-if (gameAnswerTwo === 'N') {
-  alert('Oh no! I DO love purple!');
-} else if (gameAnswerTwo === 'Y') {
-  alert('You\'re right, ' + userName + '!\n(as if my hair wasn\'t a big enough flag!)');
-  scoreTwo++;
-  console.log('gameScore should be +1', scoreTwo);
-} else {
-  alert('You need to try Y/N next time!');
-}
-return scoreTwo;
+  if (gameAnswerTwo === 'N') {
+    alert('Oh no! I DO love purple!');
+  } else if (gameAnswerTwo === 'Y') {
+    alert('You\'re right, ' + userName + '!\n(as if my hair wasn\'t a big enough flag!)');
+    scoreTwo++;
+    console.log('gameScore should be +1', scoreTwo);
+  } else {
+    alert('You need to try Y/N next time!');
+  }
+  return scoreTwo;
 
 }
 gameScore = questionTwo(gameScore);
@@ -102,6 +102,7 @@ function questionFive(scoreFive) {
   }
   return scoreFive;
 }
+gameScore = questionFive(gameScore);
 
 //QUESTION SIX
 function questionSix(scoreSix) {
@@ -131,7 +132,7 @@ function questionSix(scoreSix) {
     scoreSix++;
     console.log('gameScore should be +1: ' + scoreSix);
   }
-  return scoreSix
+  return scoreSix;
 }
 gameScore = questionSix(gameScore);
 
@@ -147,7 +148,7 @@ function questionSeven(scoreSeven) {
 
   if (answerStates.includes(gameAnswerSeven)) {
     scoreSeven++;
-    console.log("gameScore increases by 1: " + gameScore);
+    console.log('gameScore increases by 1: ' + gameScore);
     alert('You got it!');
   } else if (guessAnswerSeven < 6) {
     prompt('Try again');
