@@ -161,3 +161,6 @@ gameScore = questionSeven(gameScore);
 alert('I\'ve been to the follow states:\n' + answerStates[0] + '\n' + answerStates[1] + '\n' + answerStates[2] + '\n' + answerStates[3] + '\n' + answerStates[4] + '\n' + answerStates[5]);
 
 alert('Thanks for playing, ' + userName + '!\nI hope you enjoyed the facts you now know about me!\nYou got ' + gameScore + ' out of 7 correct!');
+
+
+alert('Scott was here!');
